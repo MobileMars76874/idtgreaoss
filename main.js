@@ -15,4 +15,6 @@ fill("#00ffff");
 noFill();
 stroke("#00ffff");
 rect(30, 60, 450, 350);
+rect(300, 90, 270, 320);
+
 }
