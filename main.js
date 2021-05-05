@@ -27,10 +27,10 @@ for(i = 0; i < objects.length; i++){
 document.getElementById("S").innerHTML = "Status : Detected objects";   
 fill("#00ffff");
 percent = floor(objects[i].confidence * 100);
-text(objects[i].label+" "+percent+"", objects[i].x + 10, objects[i].y + 10);
+text(objects[i].label+" "+percent+"", objects[i].normalized.x + 10, objects[i].normalized.y + 10);
 noFill();
 stroke("#00ffff");
-rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
+rect(objects[i].normalized.x, objects[i].normalized.y, objects[i].width, objects[i].height);
 }
 }
 }
