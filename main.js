@@ -23,7 +23,7 @@ OBJ_D.detect(D_C, gotresults);
 function draw(){
 image(D_C, 0, 0, 640, 420);
 if(status != ""){
-for(i = 0; i < object.length; i++){
+for(i = 0; i < objects.length; i++){
 document.getElementById("S").innerHTML = "Status : Detected objects";   
 fill("#00ffff");
 percent = floor(objects[i].confidence * 100);
